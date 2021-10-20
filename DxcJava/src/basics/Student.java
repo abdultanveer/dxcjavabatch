@@ -10,7 +10,9 @@ public class Student {
 	/**
 	 * default constructor -- harshita
 	 */
-	public Student() {}
+	public Student() {
+		System.out.println("harshita constructor");
+	}
 	
 	
 	/**
@@ -19,6 +21,7 @@ public class Student {
 	 */
 	public Student(String name) {
 		this.name = name;
+		System.out.println("lahari constructor");
 	}
 	
 	/**
@@ -27,9 +30,11 @@ public class Student {
 	 * @param age
 	 */
 	public Student(String name, int age) {
-		super();
-		this.name = name;
+		this(name);
+		System.out.println("satvika constructor");
+		//this.name = name;
 		this.age = Util.incrementByTen(age);
+		displayStudent(this);
 	}
 
 	static String COLLEGE_NAME = "IIT";
@@ -49,6 +54,13 @@ public class Student {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	
+	void displayStudent(Student s) {
+		System.out.println("students name is  "+s.name);
+	}
+
+	
 	
 	//Student[] students = new Student[100];
 	

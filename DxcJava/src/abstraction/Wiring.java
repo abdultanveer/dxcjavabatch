@@ -11,6 +11,7 @@ public class Wiring {
 		sListener.switchTwo();
 		sListener.switchThree(12);
 		sListener.swithcFour();
+		throw new NullPointerException();
 	}
 
 }

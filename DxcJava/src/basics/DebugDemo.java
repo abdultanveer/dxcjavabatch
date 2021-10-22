@@ -1,8 +1,15 @@
 package basics;
 
-public class DebugDemo {
+import abstraction.email.Harshita;
+
+public class DebugDemo extends Harshita {
 	
-	public static void main(String[] args) {
+	
+	
+	 static void main(String[] args) {
+		
+		
+		
 		System.out.println("DebugDemo-- main");
 		Calculator calc = new Calculator();
 		int sum = calc.add(10, 20);

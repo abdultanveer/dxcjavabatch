@@ -1,4 +1,6 @@
-package dependency.injection;
+package dependency.injection.factory;
+
+import dependency.injection.Service;
 
 public class AirtelService implements Service{
 
